@@ -1,0 +1,138 @@
+﻿body {
+}
+
+#topnav{
+	display:block;
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-size:13px;
+	font-weight:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	background-color:#000000;
+	}
+	
+	#topnav li a:link, #topnav li a:visited, #topnav li a:hover{
+	display:block;
+	margin:0;
+	padding:15px 20px;
+	color:#FFFFFF;
+	background-color:#000000;
+	}
+	
+	#center{
+	display:block;
+	color:#FFFFFF;
+	/*background-color:#CCCCCC;*/
+    background-image: url("../images/gameback.png");
+	}
+	
+	#tophead
+{
+    display: block;
+    background-color: #000000;
+    background-image: url('../images/header.png');
+    background-repeat: no-repeat;
+}
+
+	#main
+{
+    background-image: url('../images/Vitrail_Chartres_210209_07.jpg');
+}
+
+#registerleft
+{
+    
+    margin-top:70px;
+    margin-left:200px;
+    background-position: right center;
+    width: 28%;
+    height:70%;
+    float: left;
+    display: block;
+    vertical-align: middle;
+    background-image: url('../images/Crusado.png');
+    background-repeat: no-repeat;
+}
+
+#registerright
+{
+    margin-right: 400px;
+    height: 300px;
+    margin-top: 35px;
+    width: 350px;
+    float: right;
+    display: block;
+    vertical-align: middle;
+    background-color: #000000;
+ }
+
+#contactus{
+	display:block;
+	color:#FFFFFF;
+	/*background-color:#CCCCCC;*/
+    background-image: url("../images/gameback.png");
+	}
+
+
+#masterleft
+{
+    
+   
+  
+    width: 146px;
+    height:527px;
+    float: left;
+    display: block;
+  
+  
+}
+
+#masterright
+{
+  
+    height: 410px;
+    margin-left:160px;
+    width: 739px;
+    /*float: right;*/
+    /*display: block;*/
+
+}
+
+#imagelogin {
+    background-image: url('../images/pergamino.png');
+    background-repeat: no-repeat;
+    height: 497px;
+    margin-bottom: 79px;
+    width: 410px;
+    margin-left: 507px;
+    margin-right: 0px;
+} 
+
+	#tophead
+{
+    display: block;
+    background-image: url('../images/masterback.png');
+    background-repeat: no-repeat;
+    
+    
+}
+
+#tophead2
+{
+    background-image: url('../images/header.png');
+    background-repeat: no-repeat;
+    height: 151px;
+}
+
+#firstcharacterleft
+{
+    
+
+}
+
+#firstcharacterright
+{
+  
+}

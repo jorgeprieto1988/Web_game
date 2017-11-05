@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master2.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="styles/StyleSheet.css" type="text/css" />
+    <style type="text/css">
+        .style2
+        {
+            height: 149px;
+            width: 777px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 732px" id="main" >
+        
+        <div style="height: 161px" id="tophead">
+            <img alt="head" class="style2" src="images/header.png" /></div>
+        <div style="height: 46px" id="topnav">
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana" 
+                Font-Size="0.8em" ForeColor="#7C6F57" StaticSubMenuIndent="10px">
+                <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#F7F6F3" />
+                <DynamicSelectedStyle BackColor="#5D7B9D" />
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Log in" Value="Log in" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Register" Value="Register" NavigateUrl="~/Register.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="About" Value="About" NavigateUrl="~/About.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Game info" Value="Game info" NavigateUrl="~/Game info.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Contact" Value="Contact" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#5D7B9D" />
+            </asp:Menu>
+        </div>
+        <div style="height: 528px" id="center"><div id="masterleft">
+            <asp:Menu ID="Menu2" runat="server" BackColor="Black" BorderStyle="Groove" 
+                DynamicHorizontalOffset="2" Font-Names="Algerian" Font-Overline="False" 
+                Font-Size="Large" Font-Underline="False" ForeColor="#7C6F57" Height="519px" 
+                onmenuitemclick="Menu2_MenuItemClick" StaticSubMenuIndent="10px" 
+                Width="140px">
+                <DynamicHoverStyle BackColor="#7C6F57" Font-Size="Large" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#F7F6F3" />
+                <DynamicSelectedStyle BackColor="#5D7B9D" />
+                <Items>
+                    <asp:MenuItem Text="My Hero" Value="My Hero" NavigateUrl="~/Player.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Profile" Value="Profile" NavigateUrl="~/Profile_player.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Blacksmith" Value="Blacksmith" NavigateUrl="~/Blacksmith.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Messages" Value="Messages" NavigateUrl="~/inbox.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Shop.aspx" Text="Shop" Value="Shop"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/FriendList.aspx" Text="Friends" Value="Friends"></asp:MenuItem>
+                    <asp:MenuItem Text="Ranking" Value="Ranking" NavigateUrl="~/Ranking.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Log Out" Value="Log Out"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#5D7B9D" />
+                <StaticItemTemplate>
+<%# Eval("Text") %>
+                </StaticItemTemplate>
+            </asp:Menu>
+            </div><div id="masterright">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div> </div>
+       
+    </div>
+    </form>
+</body>
+</html>
